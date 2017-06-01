@@ -1,9 +1,9 @@
 ## Colorize the ls output ##
-alias ls="ls --color=auto"
+alias ls="ls -G"
 ## Use a long listing format ##
-alias ll="ls -la"
+alias ll="ls -Alh"
 ## Show hidden files ##
-alias l.="ls -d .* --color=auto"
+alias l.="ls -d .* -G"
 ## get rid of command not found ##
 alias cd..="cd .."
 ## a quick way to get out of current directory ##

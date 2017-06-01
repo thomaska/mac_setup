@@ -1,5 +1,7 @@
 #!/bin/bash
-cp ./.bash_rc ./.gitconfig ~/
+cat ./.bash_profile >> ~/.bash_profile
+cat ./.gitconfig >> ~/.gitconfig
+source ~/.bash_profile
 
 ## Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
