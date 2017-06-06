@@ -10,6 +10,8 @@ source ~/.bash_profile
 wget https://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.tar.gz
 gunzip -c google-cloud-sdk.tar.gz | tar xopf -
 ./google-cloud-sdk/install.sh --quiet
+source ./path.bash.inc
+source ./completion.bash.inc
 
 ## Install kubectl (requires Gcp)
 gcloud components install kubectl --quiet
