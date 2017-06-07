@@ -20,4 +20,5 @@ gcloud components install kubectl --quiet
 wget http://packages.confluent.io/archive/3.2/confluent-oss-3.2.1-2.11.tar.gz
 gunzip -c confluent-oss-3.2.1-2.11.tar.gz | tar xopf -
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-export PATH=$PATH:$DIR/confluent-3.2.1/bin
+echo "export PATH=$PATH:$DIR/confluent-3.2.1/bin" >> ~/.bash_profile
+source ~/.bash_profile
